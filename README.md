@@ -1,5 +1,7 @@
 # AWS IAM Mastery Lab
 
+![iam-service](./docs/architecture/iam-service.png)
+
 A progressive, hands-on AWS Identity and Access Management (IAM)
 laboratory built with Terraform.
 

@@ -10,6 +10,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - floci-data:/var/lib/floci
     environment:
+      - FLOCI_SERVICES_IAM_ENFORCEMENT_ENABLED=true
       - FLOCI_HOSTNAME=floci
       - FLOCI_PORT=4566
       - FLOCI_STORAGE_MODE=persistent
@@ -21,6 +22,7 @@ services:
     ports:
       - "4500:4500"
     environment:
+      - FLOCI_SERVICES_IAM_ENFORCEMENT_ENABLED=true
       - FLOCI_ENDPOINT=http://floci:4566
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
